@@ -1,0 +1,339 @@
+/* apply a natural box layout model to all elements, but allow components to change */
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.home{
+	 min-height: 100vh; /* will cover the 100% of viewport */
+	 overflow: hidden;
+	 display: block;
+	 position: relative;
+	 padding-bottom: 5px; /* height of your footer */
+	 background: url(../images/software-developer-female.jpg) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+	font-family:'Quicksand', sans-serif;
+}
+
+footer {
+	position: absolute;
+	padding-bottom: 1em;
+	width: 100%;
+    text-align: center;
+}
+
+html, body {
+	height: 100%
+}
+
+body {
+	padding: 0;
+    margin: 0;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase; /*removes default bold style */
+	margin: 20 0 0 0;
+	line-height: 1; /* tightens up space btw headings */
+	letter-spacing: .25em;
+}
+
+h2 {
+	font-family: 'Karla', sans-serif;
+	text-transform: lowercase;
+	font-weight: 300;
+	letter-spacing: 4px;
+	margin: 0; /* removes default space */
+	line-height: 1; /* tightens up space btw headings */
+}
+
+a {
+	color: #333;
+	text-decoration: none; /*removes default underline */
+}
+
+header,
+section {
+	padding: 5px;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+
+
+/* HEADER$ 
+------------------------*/
+header h1 {
+	font-size: 36px;
+	font-family: 'Quicksand', sans-serif;
+}
+header h2 {
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	padding-left: 2em;
+}
+
+section {
+	padding-top: 125px;
+}
+
+nav {
+	position: absolute;
+	right: 20px;
+	top:20px;
+}
+
+nav ul {
+	list-style-type:none; /*removes bullets */
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block; /* lists items side by side*/
+}
+
+nav a {
+	display: block; 
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+
+
+/* ABOUT PAGE
+------------------------*/
+
+.information {
+	background-image: linear-gradient(to bottom, #d7f6fb, #c4effa, #b2e7fb, #a2dffd, #95d6ff);
+
+}
+
+.about h1 {
+	padding-left: 2%
+}
+.about h2 {
+	padding-left: 2%
+}	
+.profile-img {
+	float: left;
+	height: 31%;
+	width: 31%;
+	margin: 20px;
+	border: 10px solid white;
+}
+
+.profile-img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.aboutColleen {
+	font-family: 'Karla', sans-serif;
+	margin: 2%;
+}
+
+.interests {
+	list-style-type: none;
+}
+
+blockquote {
+	clear: both; /* clears the float and returns page back to normal*/
+	text-align: center;
+	padding-top: .5em;
+}
+
+blockquote p {
+	font-size: 1.5em;
+	font-family: 'Karla', sans-serif;
+}
+
+/* home PAGE
+------------------------*/
+
+nav {
+	position: absolute;
+	font-family:'Karla', sans-serif; 
+}
+
+
+.home header {
+	position: static;
+	border-bottom: none;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.lowerCase {
+	text-transform: lowercase;
+}
+
+
+.home header h1 {
+	font-size: 40px;
+}
+
+.home header h2 {
+	font-size: 26px;
+}
+
+
+.home li {
+	display: block;
+}
+
+.home nav {
+	text-align: right;
+	font-size: 25px;
+}	
+
+.home nav ul {
+	display: none;
+}
+
+.home nav:hover ul {
+	display: block;
+}
+
+.home a:hover {
+	color: gray;
+	padding: 10px;
+	background: #D7F6FB;
+
+}
+.fa-bars {
+	padding: 15px;
+}
+
+.home a {
+	padding: 15px;
+	display: inline-block;
+}
+
+.home footer {
+  position: absolute;
+  bottom:5px;
+  width:100%;
+  height:20px;
+}
+
+/* PROJECTS PAGE
+------------------------*/
+section.technical-projects {
+	font-family: 'Karla', sans-serif;
+	background: #E0F7FA;
+}
+
+.container {
+	margin-top: 10em;
+}
+
+section.technical-projects nav {
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+}
+
+section.technical-projects h1{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.technicalProjects h2{
+	font-family: 'Karla', sans-serif;
+}
+
+.project-heading {
+  text-align: center;
+}
+
+.introduction {
+  text-align: center;
+}
+
+
+div.row {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+
+
+/* CONTACT PAGE
+------------------------*/
+
+.contact header {
+	background: #efefea;
+}
+
+.contact h1 {
+	margin-left: 3%;
+}
+.contact {
+	background: url(../images/keyboard.jpg) no-repeat 90% / cover;
+	font-family:'Karla', sans-serif;
+}
+
+.contact-form {
+	background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+	opacity: .9;
+	height: 450px;
+	max-width: 600px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	display: block;
+	border: #efefea solid 10px;
+	color: white;	
+}
+
+form {
+  width: 600px;
+}
+input,
+textarea {
+  border: 1px solid gray;
+  width: 400px;
+  margin-bottom: 10px;
+}
+input {
+  height: 20px;
+} 
+textarea {
+  height: 100px;
+}
+button {
+  background: #DEF3F8;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
