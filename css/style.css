@@ -2,6 +2,7 @@
 * {
  box-sizing: border-box;
 }
+
 *:before,
 *:after {
  box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
  position: relative;
 }
 
-.home{
+.home {
 	 min-height: 100vh; /* will cover the 100% of viewport */
 	 overflow: hidden;
 	 display: block;
@@ -27,16 +28,22 @@ body {
 	font-family:'Quicksand', sans-serif;
 }
 
-footer {
+/*.container {
+	width: auto;
+  	max-width: 680px;
+  	padding: 0 15px;
+ } */
+
+.footer {
 	position: absolute;
-	padding-bottom: 1em;
+	bottom: 0;
 	width: 100%;
-    text-align: center;
+	height: 60px;
+	background-color: white;
+	font-family: 'Quicksand', sans-serif;
+	color: blue;
 }
 
-html, body {
-	height: 100%
-}
 
 
 h1 {
@@ -159,15 +166,17 @@ nav a {
 }
 
 blockquote {
-	clear: both; /* clears the float and returns page back to normal*/
 	text-align: center;
 	padding-top: .5em;
 }
 
 blockquote p {
-	font-size: 1.5em;
+	font-size: 1.0em;
 	font-family: 'Karla', sans-serif;
 }
+
+
+
 
 /* home PAGE
 ------------------------*/
@@ -231,12 +240,6 @@ nav {
 	display: inline-block;
 }
 
-.home footer {
-  position: absolute;
-  bottom:5px;
-  width:100%;
-  height:20px;
-}
 
 /* PROJECTS PAGE
 ------------------------*/
@@ -245,9 +248,9 @@ section.technical-projects {
 	background: #E0F7FA;
 }
 
-.container {
+/*.container {
 	margin-top: 10em;
-}
+}*/
 
 section.technical-projects nav {
 	font-family: 'Karla', sans-serif;
@@ -276,10 +279,6 @@ div.row {
 	margin-right: 5em;
 }
 
-.technicalProjects footer{
-	margin-top: 5px;
-	background-color: red;
-}
 
 
 
@@ -301,11 +300,11 @@ div.row {
 .contact-form {
 	background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
 	opacity: .9;
-	height: 450px;
+	height: 500px;
 	max-width: 600px;
 	margin: auto;
-	margin-top: 50px;
-	padding: 20px;
+	margin-top: 10px;
+	padding: 15px;
 	display: block;
 	border: #efefea solid 10px;
 	color: white;	
