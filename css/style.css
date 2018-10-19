@@ -1,12 +1,9 @@
 /* apply a natural box layout model to all elements, but allow components to change */
 * {
  box-sizing: border-box;
+ overflow: scroll;
 }
 
-*:before,
-*:after {
- box-sizing: border-box;
-}
 
 html,
 body {
@@ -26,22 +23,6 @@ body {
   	-o-background-size: cover;
  	background-size: cover;
 	font-family:'Quicksand', sans-serif;
-}
-
-/*.container {
-	width: auto;
-  	max-width: 680px;
-  	padding: 0 15px;
- } */
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: white;
-	font-family: 'Quicksand', sans-serif;
-	color: blue;
 }
 
 
@@ -158,22 +139,15 @@ nav a {
 
 .aboutColleen {
 	font-family: 'Karla', sans-serif;
-	margin: 2%;
+	margin: 4%;
+	padding-right: 4%;
+	padding-left: 4%;
 }
 
 .interests {
 	list-style-type: none;
 }
 
-blockquote {
-	text-align: center;
-	padding-top: .5em;
-}
-
-blockquote p {
-	font-size: 1.0em;
-	font-family: 'Karla', sans-serif;
-}
 
 
 
@@ -247,10 +221,6 @@ section.technical-projects {
 	font-family: 'Karla', sans-serif;
 	background: #E0F7FA;
 }
-
-/*.container {
-	margin-top: 10em;
-}*/
 
 section.technical-projects nav {
 	font-family: 'Karla', sans-serif;
@@ -331,6 +301,22 @@ button {
   padding: 10px 40px;
   font-size: 16px;
 }
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	background-color: white;
+	font-family: 'Quicksand', sans-serif;
+	color: black;
+}
+
+.footer p {
+	text-align: center;
+}
+
+
 
 
 
