@@ -241,18 +241,18 @@ nav {
 /* PROJECTS PAGE
 ------------------------*/
 
-section.technical-projects {
+section.projects {
 	font-family: 'Karla', sans-serif;
 	background: #E0F7FA;
 }
 
-section.technical-projects nav {
+section.projects nav {
 	font-family: 'Karla', sans-serif;
 	text-transform: uppercase;
 	 font-size: 1.2em;
 }
 
-section.technical-projects h1{
+section.projects h1{
 	font-size: 1.7em;
 }
 
