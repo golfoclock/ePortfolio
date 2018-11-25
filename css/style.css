@@ -1,55 +1,48 @@
-
 * {
- box-sizing: border-box;
- overflow: scroll;
+	box-sizing: border-box;
 }
-
 
 html,
 body {
- height: 100%;
- position: relative;
+ 	height: 100%;
+ 	position: relative;
+ 	
 }
 
 .home {
-	 min-height: 100vh; 
-	 overflow: hidden;
-	 display: block;
-	 position: relative;
-	 padding-bottom: 5px; 
-	 background: url(../images/software-developer-female.jpg) no-repeat center center fixed;
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
- 	background-size: cover;
-	font-family:'Quicksand', sans-serif;
+	background: #f4f9f9;
+	color: #253552;
 }
+ 
 
-
-
-h1 {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 300;
-	text-transform: uppercase; 
-	margin: 20 0 0 0;
-	line-height: 1; 
-	letter-spacing: .25em;
+.home h1 {
+	background-image: url(../images/blue-code.jpg);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip:text;
+	background-size: 800px 600px;
+	background-repeat: repeat;
+	background-clip: text;
+	color:transparent;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+	font-size: 10vw;
+	text-transform: uppercase;
+	
 }
 
 h2 {
 	font-family: 'Karla', sans-serif;
 	text-transform: lowercase;
 	font-weight: 300;
-	letter-spacing: 4px;
+	letter-spacing: 2vw;
 	margin: 0; 
-	line-height: 1; 
 }
 
 h3 {
 	font-family: 'Karla', sans-serif;
 	text-transform: lowercase;
 	font-weight: 300;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 	text-align: center;
 	line-height: 1; 
 	
@@ -57,8 +50,8 @@ h3 {
 
 
 a {
-	color: #DEF3F8;
-	text-decoration: none; 
+	color: #253552;
+	text-decoration: none;
 }
 
 a:hover {
@@ -68,6 +61,10 @@ a:hover {
 
 a:active {
   color: black;
+}
+
+.home nav {
+	background: #B2D5E9; /*bright medium blue*/
 }
 
 
@@ -82,36 +79,86 @@ body {
     margin: 0;
   	width: 100%;
   	height: 100%;
-  	position: fixed;
+}
+
+.mini-intro {
+	height: 400px;
+	width: 800px;
+	margin-top: 100px;
+	margin-left: 100px;
+	font-size: 60px;
+	font-family: 'Karla', sans-serif;
+}
+
+/* home PAGE
+------------------------*/
+
+nav {
+	position: absolute;
+	font-family:'Karla', sans-serif; 
+	font-size: 18px;
+}
+
+.lowerCase {
+	text-transform: lowercase;
 }
 
 
+.home li {
+	display: block;
+}
 
+.home nav {
+	text-align: right;
+	font-size: 18px;
+}	
+
+.home nav ul {
+	display: none;
+	margin-top: 70%;
+}
+
+.home nav:hover ul {
+	display: block;
+}
+
+.home a:hover {
+	color: black;
+	padding: 10px;
+	background-color: white;
+	
+
+
+}
+.fa-bars {
+	padding: 15px;
+}
+
+.home a {
+	padding: 15px;
+	display: inline-block;
+}
 
 /* HEADER$ 
 ------------------------*/
+
 header h1 {
-	font-size: 1.7em;
-	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	font-family: 'Karla', sans-serif;
 	padding: 35px 0 0 20px;
 	margin-bottom: 2px;
+	text-transform: lowercase;
 
 }
 header h2 {
-	font-size: 1.2em;
-	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	font-family: 'Karla', sans-serif;
 	padding-left: 20px;
 }
 
-header {
-	position: fixed;
-	width: 100%;
-	padding-left: 2em;
-	color: black;
-}
 
 section {
-	padding-top: 125px;
+	padding-top: 75px;
 }
 
 nav {
@@ -134,25 +181,58 @@ nav a {
 	display: block; 
 	padding: 5px 15px;
 	text-transform: uppercase;
-	color: black;
+	color: #253552;
 }
+
+
 
 
 /* ABOUT PAGE
 ------------------------*/
 
-.information {
-	background: #7085B6;  
-	background: -webkit-linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
-	background: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+.about {  
+	background: rgb(218,234,234);
+    background: -moz-linear-gradient(90deg, rgba(218,234,234,1) 0%, rgba(118,179,234,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(218,234,234,1) 0%, rgba(118,179,234,1) 100%);
+    background: linear-gradient(90deg, rgba(218,234,234,1) 0%, rgba(118,179,234,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daeaea",endColorstr="#76b3ea",GradientType=1);
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: #253552;
+}
+
+
+.about h3 {
+	margin-bottom: 50px;
+	font-size: 24px;
+}
+
+section .information {
+	font-family: 'Karla', sans-serif;
+	float: left;
+
 }
 
 .profile-img {
-	float: left;
-	height: 31%;
-	width: 31%;
-	margin: 20px;
-	border: 10px solid #f4f9f9;
+	height: 300px;
+	width: 300px;
+	margin-left: 150px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	background: white;
+    display: inline;
+    float: left;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    position:relative;
 }
 
 .profile-img:hover {
@@ -160,105 +240,48 @@ nav a {
   transform: scaleX(-1);
 }
 
-.aboutColleen {
-	font-family: 'Karla', sans-serif;
-	margin: 4%;
-	padding-right: 4%;
-	padding-left: 4%;
-}
-
 .interests {
 	list-style-type: none;
+	margin-left: 150px;
 }
 
 
-
-
-
-/* home PAGE
-------------------------*/
-
-nav {
-	position: absolute;
-	font-family:'Karla', sans-serif; 
-}
-
-
-.home header {
-	position: static;
-	border-bottom: none;
-	text-align: center;
-	padding-top: 25px;
-}
-
-.lowerCase {
-	text-transform: lowercase;
-}
-
-
-.home header h1 {
-	font-size: 2em;
-}
-
-.home header h2 {
-	font-size: 1.2em;
-}
-
-
-.home li {
-	display: block;
-}
-
-.home nav {
-	text-align: right;
-	font-size: 1.2em;
-}	
-
-.home nav ul {
-	display: none;
-}
-
-.home nav:hover ul {
-	display: block;
-}
-
-.home a:hover {
-	color: gray;
+.information p {
+	margin-right: 150px;
 	padding: 10px;
-	background: #D7F6FB;
-
-}
-.fa-bars {
-	padding: 15px;
+	margin-left: 150px;
+	color: #253552;
 }
 
-.home a {
-	padding: 15px;
-	display: inline-block;
+.information a {
+	text-decoration: underline;
+	color: #0044CC;
 }
 
 
 /* PROJECTS PAGE
 ------------------------*/
 
-.projects {
-	font-family: 'Karla', sans-serif;
-	background: #E0F7FA;
+.examples{
+	background-color: #B2D5E9; 
+	height: 100%;
 }
 
-.projects nav {
+.examples nav {
 	font-family: 'Karla', sans-serif;
 	text-transform: uppercase;
-	 font-size: 1.2em;
+	font-size: 18px;
+	color: #f4f9f9;
 }
 
-.projects h1{
-	font-size: 1.7em;
+.examples h1{
+	color: #f4f9f9;
 }
 
 .project-heading {
   text-align: center;
   font-size: 18px;
+  color: #f4f9f9;
 }
 
 .introduction {
@@ -277,32 +300,37 @@ div.row {
 
 
 
-
 /* CONTACT PAGE
 ------------------------*/
 
-.contact header {
-	background: #e8e8e8;
-	opacity: .8;
+.contact {
+	background-color: #76b3ea;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2376b3ea'/%3E%3Cstop offset='1' stop-color='%23253552'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23daeaea' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23daeaea' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23daeaea' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23daeaea' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Karla", sans-serif;
 }
 
-.contact {
-	background: url(../images/keyboard.jpg) no-repeat 90% / cover;
-	font-family:'Karla', sans-serif;
+.contact header {
+	color: #fff;
+	
+}
+
+.contact nav a {
+	color: #fff;
 }
 
 .contact-form {
-	background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+	background:#f3f0ed;
 	opacity: .9;
-	height: 500px;
-	width: 1
-	max-width: 550px;
+	height: 40%;                 
+	max-width: 30%;
 	margin: auto;
 	margin-top: 10px;
 	padding: 15px;
 	display: block;
-	border: #efefea solid 10px;
-	color: white;	
+	border: white solid 10px;
+	color: #253552;	
 }
 
 form {
@@ -326,26 +354,81 @@ textarea {
   width: 100%;
 }
 button {
-  background: #DEF3F8;
-  border: none;
+  background: #E70066;
+  border: 1px solid #f4f9f9;
   padding: 10px 40px;
   font-size: 16px;
 }
 
-.footer {
+footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 5%;
 	background-color: #f4f9f9;
-	font-family: 'Quicksand', sans-serif;
-	color: black;
+	font-family: 'Karla', sans-serif;
+	border-top: 2px solid #e9e3de;
+  	align-items: center;
+  	justify-content: center;
+  	display: flex;
+  	color: #253552;
 }
 
-.footer p {
+footer p {
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
 	font-size:14px;
+
 }
+footer ul {
+	list-style: none;
+	display: inline-block;
+    overflow: auto;
+}
+ 
+footer ul li {
+    list-style-type: none;
+    float: left;
+}
+ 
+
+.social li a {
+	padding: 0;
+}
+
+.projects-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	background-color: #f4f9f9;
+	font-family: 'Karla', sans-serif;
+	border-top: 2px solid #e9e3de;
+  	align-items: center;
+  	justify-content: center;
+  	display: flex;
+  	color: #253552;
+}
+footer ul li a i {
+    background: transparent;
+    color: #253552;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+
+
+
+
 
 
 
