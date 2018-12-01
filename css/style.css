@@ -469,6 +469,9 @@ footer ul li a i {
 	h1 {
 		display: none;
 	}
+	#name {
+		display: block;
+	}
 
 	.responsive-nav {
 		width: 100%;
@@ -483,10 +486,10 @@ footer ul li a i {
 	.responsive-nav ul li {
 		list-style: none;
 		text-align: center;
-		border-bottom: 1px solid blue;
+		border-bottom: 1px solid #DAEAEA;
 		width: 100%;
 		margin:0;
-		padding: 2% 0 2% 0;
+		padding: 3% 0 3% 0;
 		background-color: #f4f9f9;
 
 	}
@@ -507,18 +510,24 @@ footer ul li a i {
 
 	.information {
 		margin-top: 30%;
-		background: red;
+		background: #DAEAEA;
 	}
 
 	.profile-img {
 		height: 50%;
 		width: 50%;
-		margin-top: 10%;
+		margin-top: 12%;
+		margin-left: 1%;
 		float: left;
 	}
+	.paragraphs {
+		margin-top: 35% 0 0 0;
+		align-items: center;
+	}
 
-	.information p {
-		width: 100%;
+	.interests {
+		list-style-type: none;
+		margin-left: 1%;
 	}
 }
 
