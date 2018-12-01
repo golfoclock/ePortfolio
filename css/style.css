@@ -510,7 +510,8 @@ footer ul li a i {
 
 	.information {
 		margin-top: 30%;
-		background: #DAEAEA;
+		background-size: contain; /*#DAEAEA;*/
+		width: 100%;
 	}
 
 	.profile-img {
@@ -529,6 +530,8 @@ footer ul li a i {
 		list-style-type: none;
 		margin-left: 1%;
 	}
+
+
 }
 
 
