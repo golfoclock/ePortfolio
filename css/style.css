@@ -295,14 +295,7 @@ nav a {
 }
 
 
-div.row {
-	margin-left: 5em;
-	margin-right: 5em;
-}
 
-.caption {
-	height: 128px;
-}
 
 
 
@@ -469,7 +462,6 @@ footer ul li a i {
 		position: absolute;
 		right: 0;
 		top: 0;
-		opacity: .8;
 	}
 
 	h1 {
@@ -484,12 +476,10 @@ footer ul li a i {
 		height: auto;
 
 	}
-
 	.responsive-nav ul {
 		margin: 0;
 		
 	}
-
 	.responsive-nav ul li {
 		list-style: none;
 		text-align: center;
@@ -509,6 +499,7 @@ footer ul li a i {
 		cursor: pointer;
 		margin:0;
 		padding: 0;
+		color: #253552;
 	}
 
 	h3 {
@@ -548,6 +539,57 @@ footer ul li a i {
 	}
 	footer {
 		height: 10%;
+	}
+
+	.projects {
+		height: 100%
+		margin-top: 20%;
+	}
+
+	.caption {
+		height: auto;
+	}
+
+	div.row {
+	margin: 15em 2em 2em 2em;
+	}
+
+	.col-md-4 {
+		padding: 0;
+		align-items: center;
+	}
+
+	section.projects {
+		background: #B2D5E9;
+	}
+
+	footer.projects-footer {
+		height: 10%;
+		position: fixed;
+	}
+
+	body.contact {
+		background-image: none;
+		background-color: #DAEAEA;
+	}
+
+	.contact-page {
+		text-align: center;
+	}
+
+	form.contact-form {
+		text-align: left;
+		background: #f3f0ed;
+		opacity: .9;
+		width: 80%;
+		margin-top: 50%; 
+		margin-bottom: 20%;
+		padding: 2% 2% 5% 2%;
+		display: inline-block;
+		border: white solid 10px;
+		color: #253552;
+		
+
 	}
 
 }
