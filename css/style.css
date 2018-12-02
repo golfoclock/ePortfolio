@@ -486,7 +486,7 @@ footer ul li a i {
 	.responsive-nav ul li {
 		list-style: none;
 		text-align: center;
-		border-bottom: 1px solid #DAEAEA;
+		border-bottom: 2px solid #DAEAEA;
 		width: 100%;
 		margin:0;
 		padding: 3% 0 3% 0;
@@ -523,7 +523,14 @@ footer ul li a i {
 	}
 	.paragraphs {
 		margin-top: 35% 0 0 0;
-		align-items: center;
+		align-items: left;
+		width: 100%;
+	}
+
+	.paragraphs p {
+		width: 100%;
+		margin: 0;
+		margin-top:12%;
 	}
 
 	.interests {
