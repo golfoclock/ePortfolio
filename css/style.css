@@ -353,8 +353,8 @@ textarea {
   width: 100%;
 }
 button {
-  background: #E70066;
-  border: 1px solid #f4f9f9;
+  background: #B2D5E9;
+  padding: 0;
   padding: 10px 40px;
   font-size: 16px;
 }
@@ -583,7 +583,7 @@ footer ul li a i {
 		opacity: .9;
 		width: 80%;
 		margin-top: 50%; 
-		margin-bottom: 20%;
+		margin-bottom: 25%;
 		padding: 2% 2% 5% 2%;
 		display: inline-block;
 		border: white solid 10px;
