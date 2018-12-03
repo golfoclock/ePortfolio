@@ -268,7 +268,7 @@ nav a {
 /* PROJECTS PAGE
 ------------------------*/
 
-.examples{
+div.examples{
 	background-color: #B2D5E9; 
 	height: 100%;
 }
@@ -282,6 +282,12 @@ nav a {
 
 .examples h1{
 	color: #f4f9f9;
+}
+
+section.projects {
+	margin: 5% 0 17% 0;
+	padding: 5%;
+
 }
 
 .project-heading {
@@ -541,6 +547,10 @@ footer ul li a i {
 		height: 10%;
 	}
 
+	.examples {
+		height: auto;
+	}
+
 	.projects {
 		height: 100%
 		margin-top: 20%;
@@ -551,7 +561,7 @@ footer ul li a i {
 	}
 
 	div.row {
-	margin: 15em 2em 2em 2em;
+	margin-top: 55%;
 	}
 
 	.col-md-4 {
