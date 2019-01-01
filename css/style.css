@@ -285,8 +285,9 @@ div.examples{
 }
 
 section.projects {
-	margin: 5% 0 17% 0;
+	margin: 5% 0 0 0;
 	padding: 5%;
+	background-color: #B2D5E9;
 
 }
 
