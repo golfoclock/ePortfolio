@@ -11,20 +11,20 @@ body {
 
 .home {
 	background: #ffffff;
-	color: #253552;
+	color: #4f4f4f;
 }
  
 
 .home h1 {
-	background-image: url(../images/gingham.jpg);
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip:text;
-	background-size: 500px 350px;
 	background-repeat: none;
 	background-clip: text;
 	color:transparent;
 	font-family: 'Work Sans', sans-serif;
-	text-shadow: 8px 8px 0px #FF4162;
 	font-size: 10vw;
 	text-transform: uppercase;
 	
@@ -64,9 +64,10 @@ a:active {
 }
 
 .home nav {
-	background-image: url(../images/gingham.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;);
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
 	background-attachment: fixed;; 
 }
 
@@ -144,6 +145,7 @@ nav {
 .home a {
 	padding: 15px;
 	display: inline-block;
+	color: #fff;
 }
 
 /* HEADER$ 
@@ -188,10 +190,8 @@ nav a {
 	display: block; 
 	padding: 5px 15px;
 	text-transform: uppercase;
-	color: #FF4162;
+	color: #FFF;
 }
-
-
 
 
 /* ABOUT PAGE
@@ -200,10 +200,17 @@ nav a {
 .about {  
 	font-family: 'Karla', sans-serif;
 	font-size: 18px;
-	color: #253552;
-	background: #CFDEF3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #edeef3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #edeef3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #4f4f4f;
+}
+.about nav a {
+	color: #fff;
+}
+
+.about #desktop-header {
+	height:15%;
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -271,7 +278,9 @@ nav a {
 ------------------------*/
 
 div.examples{
-	background-color: #B2D5E9; 
+	background: #2980B9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 100%;
 }
 
@@ -289,14 +298,13 @@ div.examples{
 section.projects {
 	margin: 5% 0 0 0;
 	padding: 5%;
-	background-color: #B2D5E9;
-
 }
 
 .project-heading {
   text-align: center;
   font-size: 18px;
   color: #f4f9f9;
+  margin-bottom: 3%;
 }
 
 .introduction {
@@ -306,71 +314,90 @@ section.projects {
 
 
 
-
-
 /* CONTACT PAGE
 ------------------------*/
 
 .contact {
-	background-color: #76b3ea;
-	background-image: url(../images/gingham.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;);
-	background-attachment: fixed;
-	background-size: cover;
 	font-family: "Karla", sans-serif;
+	background-color: #ededed;
 }
-
 .contact header {
 	color: #fff;
 	
 }
-
 .contact nav a {
 	color: #FF4162;
 }
 
-.contact-form {
-	background:#f3f0ed;
-	opacity: .9;
-	height: 40%;                 
-	width: 35%;
+.contact h1 {
+	margin-left: 10%;
+}
+.contact header {
+	padding-bottom: 3%;
+}
+.container{
+	background: #fff;
+	display: flex;
+	width: 80%;
 	margin: auto;
-	margin-top: 10px;
-	padding: 15px;
-	display: block;
-	border: white solid 10px;
-	color: #253552;	
+}
+.contact-left{
+	flex-basis: 60%;
+	padding: 40px 60px;
+}
+.contact-right {
+	flex-basis: 40%;
+	padding: 40px;
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	font-size: 28px;
+
 }
 
 form {
   width: 100%;
-  max-width: 500px;
 }
 
-input,
-textarea {
-  border: 1px solid gray;
-  width: 400px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
 input {
-  height: 20px;
   width: 100%;
-} 
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}  
+
+label {
+	margin-bottom: 2px;
+	display: block;
+
+}
+
 textarea {
   height: 80px;
   width: 100%;
+  box-sizing: border-box;
 }
 button {
-  background-image: url(../images/gingham.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;);
-  background-attachment: fixed;
-  padding: 0;
-  padding: 10px 40px;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  border: none;
+  outline: none;
   font-size: 16px;
+  color: white;
+}
+.contact button {
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin-top: 20px;
+	border-radius: 30px;
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+	height: 35px;
 }
 
 footer {
@@ -378,13 +405,13 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 5%;
-	background-color: #d3dded;
+	background: #FAFAFA;
 	font-family: 'Karla', sans-serif;
 	border-top: 2px solid #e9e3de;
   	align-items: center;
   	justify-content: center;
   	display: flex;
-  	color: #253552;
+  	color: #4f4f4f;
 }
 
 footer p {
@@ -419,7 +446,7 @@ footer ul li {
   	align-items: center;
   	justify-content: center;
   	display: flex;
-  	color: #253552;
+  	color: #4f4f4f;
 
 }
 
@@ -443,7 +470,7 @@ footer ul li {
 
 footer ul li a i {
     background: transparent;
-    color: #253552;
+    color: #4f4f4f;
     width: 20px;
     height: 20px;
     font-size: 20px;
@@ -468,7 +495,9 @@ footer ul li a i {
 	}
 
 	.home button {
-		background: #B2D5E9;
+		background: #12c2e9;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		padding: 0;
 	}
 
@@ -501,7 +530,10 @@ footer ul li a i {
 		width: 100%;
 		margin:0;
 		padding: 3% 0 3% 0;
-		background-color: #f4f9f9;
+		background: #12c2e9;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
 
 	}
 
@@ -513,7 +545,7 @@ footer ul li a i {
 		cursor: pointer;
 		margin:0;
 		padding: 0;
-		color: #253552;
+		color: #fff;
 	}
 
 	h3 {
@@ -522,8 +554,9 @@ footer ul li a i {
 
 	.information {
 		margin-top: 30%;
-		background-size: contain; /*#DAEAEA;*/
+		background-size: contain;
 		width: 100%;
+		background-color: #fafafa;
 	}
 
 	.profile-img {
@@ -562,6 +595,7 @@ footer ul li a i {
 	.projects {
 		height: 100%
 		margin-top: 20%;
+
 	}
 
 	.caption {
@@ -578,7 +612,7 @@ footer ul li a i {
 	}
 
 	section.projects {
-		background: #B2D5E9;
+		background-color: #fafafa;
 	}
 
 	footer.projects-footer {
@@ -587,8 +621,9 @@ footer ul li a i {
 	}
 
 	body.contact {
-		background-image: none;
-		background-color: #DAEAEA;
+		background-size: contain;
+		width: 100%;
+		background-color: #fff;
 	}
 
 	.contact-page {
@@ -597,17 +632,19 @@ footer ul li a i {
 
 	form.contact-form {
 		text-align: left;
-		background: #f3f0ed;
-		opacity: .9;
-		width: 80%;
-		margin-top: 50%; 
+		background: #fff;
+		width: 100%;
+		margin-top: 50%;
+		padding-top:10%; 
 		margin-bottom: 25%;
-		padding: 2% 2% 5% 2%;
-		display: inline-block;
-		border: white solid 10px;
-		color: #253552;
-		
-
+		display: block;
+		color: #343434;
+	}
+	div.container{
+		display: block;
+	}
+	div.contact-right {
+		display: none;
 	}
 
 }
